@@ -1,0 +1,12 @@
+@charset "utf-8";
+
+.ico {
+    background-size: cover !important;
+    display: inline-block;
+}
+
+.i-exit-app {
+    background: url(../img/ico/i-exit-app.svg);
+    height: 20px;
+    width: 20px;
+}
