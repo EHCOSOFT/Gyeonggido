@@ -1,24 +1,29 @@
 @charset "utf-8";
-@import url(../lib/bootstrap.min.css);
 @import url(common.css);
 @import url(ico.css);
+@import url(modal.css);
 
 /*
  * File       : styles.css
  * Date       : 2024. 04. 10.
  *
- * Dependency : libs/bootstrap.min.css
  *
  * SUMMARY:
- * 01) 로그인
+ * 01) login
+ * 01) index
 
  */
 
 /* **************************************** *
- * 로그인
+ * login
  * **************************************** */
-.login-wrap {
+.wrap {
   background: var(--primary-bg);
+  height: 100vh;
+  position: relative;
+}
+
+.login-wrap {
   height: calc(100vh - 64px);
 }
 
@@ -30,7 +35,55 @@
   display: flex;
   flex-direction: column;
   height: 100%;
+  justify-content: center;
   padding: 24px 0;
+}
+
+.login-wrap .card {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin: 52px auto 0 auto;
+  max-width: 552px;
+  padding: 24px 20px;
+  width: 100%;
+}
+
+.login-wrap .card h3 {
+  color: var(--gray-02);
+  font-size: var(--text-lg);
+  font-weight: bold;
+}
+
+.login-wrap .input-wrap {
+  gap: 8px;
+}
+
+.login-wrap .input-group input {
+  padding: 0 12px 0 36px;
+  height: 48px;
+}
+
+.login-wrap .input-group i {
+  left: 8px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.login-wrap button {
+  border-radius: 100px;
+  font-size: var(--text-mn);
+  height: 48px;
+  margin: 16px 0 0 0;
+  width: 100%;
+}
+
+.login-wrap .login-find {
+  color: var(--gray-04);
+  font-size: var(--text-mn);
+  text-decoration: underline;
 }
 
 .login-info {
@@ -52,8 +105,304 @@
   font-size: var(--text-lg);
   font-weight: bold;
 }
+
 @media (min-width: 768px) {
+  .login-wrap {
+    height: calc(100vh - 108px);
+  }
+
+  .login-wrap section {
+    padding: 0 0 80px 0;
+    position: relative;
+  }
+
+  .login-wrap .card {
+    margin: 0 auto;
+    padding: 48px;
+  }
+
+  .login-wrap .card h3 {
+    font-size: 24px;
+    margin: 0 0 28px 0;
+  }
+
+  .login-wrap .input-wrap {
+    gap: 16px;
+  }
+
+  .login-wrap .input-group input {
+    height: 64px;
+    padding: 0 16px 0 44px;
+  }
+
+  .login-wrap .input-group i {
+    left: 16px;
+  }
+
+  .login-wrap button {
+    font-size: 20px;
+    height: 64px;
+    margin: 68px 0 0 0;
+  }
+
+  .login-wrap .login-find {
+    font-size: var(--text-lg);
+    margin: 8px 0 0 0;
+  }
+
+  .login-info {
+    bottom: 80px;
+    left: 50%;
+    margin: 0;
+    position: absolute;
+    transform: translateX(-50%);
+    width: 100%;
+  }
+
+  .login-info h6 {
+    font-size: var(--text-lg);
+  }
 }
 
-@media (min-width: 992px) {
+/* **************************************** *
+ * index
+ * **************************************** */
+.main {
+  padding: 20px 0;
+}
+
+.main .row {
+  --bs-gutter-x: 8px;
+  --bs-gutter-y: 8px;
+}
+
+.main .card {
+  padding: 8px;
+}
+
+.main .card-title {
+  font-size: var(--text-mn);
+  font-weight: 500;
+  margin: 0 0 8px 0;
+}
+
+.statistics {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.statistics li {
+  background: #F5F7F9;
+  border-radius: 8px;
+  padding: 8px;
+}
+
+.statistics dl {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.statistics dl dt {
+  font-size: var(--text-mn);
+  font-weight: 500;
+}
+
+.statistics dl dd {
+  font-size: var(--text-mn);
+  font-weight: bold;
+}
+
+.statistics dl dd.primary {
+  color: var(--primary);
+}
+
+.statistics dl dd.green {
+  color: #02983B;
+}
+
+.card img {
+  border-radius: 4px;
+  width: 100%;
+}
+
+.card-item-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.card-item-list li {
+  background: var(--write);
+  border-radius: 4px;
+  color: var(--gray-02);
+  font-size: var(--text-mn);
+  padding: 8px;
+  width: calc(50% - 4px);
+}
+
+.main .tab-button {
+  height: 48px;
+}
+
+.main .tab-content {
+  border: 0;
+  padding: 0;
+}
+
+.tab-content .card-title {
+  background: var(--write);
+  border-radius: 4px;
+  padding: 8px 12px;
+}
+
+.chart-legend {
+  display: flex;
+  gap: 4px;
+  margin: 8px 0;
+}
+
+.chart-legend img {
+  height: 16px;
+  width: 16px;
+}
+
+.chart-legend li {
+  align-items: center;
+  background: var(--write);
+  border-radius: 4px;
+  color: var(--gray-02);
+  font-size: var(--text-mn);
+  display: flex;
+  gap: 4px;
+  padding: 4px;
+}
+
+@media (min-width: 768px) {
+  .main {
+    padding: 28px 0;
+  }
+
+  .main .row {
+    --bs-gutter-x: 20px;
+    --bs-gutter-y: 20px;
+  }
+
+  .main .card {
+    border-radius: 16px;
+    padding: 20px;
+  }
+
+  .main .card-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 0 12px 0;
+  }
+
+  .statistics {
+    gap: 8px;
+  }
+
+  .statistics li {
+    background: #F5F7F9;
+    border-radius: 12px;
+    padding: 20px 16px;
+  }
+
+  .statistics dl dt {
+    font-size: var(--text-lg);
+    font-weight: 500;
+  }
+
+  .statistics dl dd {
+    font-size: var(--text-lg);
+    font-weight: bold;
+  }
+
+  .card-item-list {
+    display: none;
+  }
+
+  .table table {
+    /* border-collapse: collapse; */
+    border-spacing : 0;
+    border-radius: 8px;
+    width: 100%;
+  }
+
+  .table table tr td {
+    background: var(--write);
+    border: 1px solid #E4EBF6;
+    color: var(--gray-02);
+    font-size: var(--text-md);
+    padding: 8px 0;
+    text-align: center;
+  }
+
+  .table table tr:first-child {
+    border-top-left-radius: 8px;
+  }
+
+  .table table tr:first-child td:first-child {
+    border-top-left-radius: 8px;
+  }
+
+  .table table tr:first-child td:last-child {
+    border-top-right-radius: 8px;
+  }
+
+  .table table tr:last-child td:first-child {
+    border-bottom-left-radius: 8px;
+  }
+
+  .table table tr:last-child td:last-child {
+    border-bottom-right-radius: 8px;
+  }
+
+  .main .tab-button {
+    height: 68px;
+  }
+
+  .tab-content .card-title {
+    background: var(--write);
+    border-radius: 8px;
+    padding: 12px 16px;
+  }
+
+  .chart-legend {
+    gap: 16px;
+    margin: 16px 0;
+  }
+
+  .chart-legend img {
+    height: 20px;
+    width: 20px;
+  }
+
+  .chart-legend li {
+    border-radius: 8px;
+    color: var(--gray-02);
+    font-size: var(--text-md);
+    gap: 8px;
+    padding: 8px 12px;
+  }
+}
+
+@media (min-width:992px) {
+  .main .card {
+    height: 100%;
+  }
+
+  .order-1 {
+    order:1;
+  }
+
+  .order-2 {
+    order:2;
+  }
+
+  .card img {
+    max-height: 568px;
+  }
 }

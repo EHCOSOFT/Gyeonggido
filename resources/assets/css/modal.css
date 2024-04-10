@@ -1,0 +1,63 @@
+@charset "utf-8";
+
+.find-modal .btn-group {
+    margin: 28px 0 0 0;
+}
+
+.find-modal .btn-group button {
+    font-size: var(--text-mn);
+    width: calc(50% - 4px)
+}
+
+.find-modal .btn-group button[type=submit] {
+    font-weight: bold;
+}
+
+.find-modal .id-find .card {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+    height: 80px;
+    margin: 16px 0 0 0;
+}
+
+.find-modal .pw-find .card {
+    margin: 16px 0 0 0;
+}
+
+.find-modal .card h3 {
+    font-size: var(--text-mn);
+    font-weight: bold;
+}
+
+.find-modal .card p {
+    color: #616970;
+    font-size: var(--text-mn);
+}
+
+@media (min-width: 768px) {
+    .find-modal .btn-group button {
+        border-radius: 8px;
+        font-size: var(--text-lg);
+    }
+
+    .find-modal .id-find .card {
+        gap: 16px;
+        height: 136px;
+        margin: 28px 0 0 0;
+    }
+
+    .find-modal .pw-find .card {
+        margin: 16px 0 0 0;
+    }
+
+    .find-modal .card h3 {
+        font-size: var(--text-lg);
+    }
+
+    .find-modal .card p {
+        font-size: var(--text-md);
+    }
+}
