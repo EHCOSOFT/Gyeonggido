@@ -143,14 +143,14 @@
                                 <ul class="statistics">
                                     <li>
                                         <dl>
-                                            <dt>유입</dt>
+                                            <dt>총 유입</dt>
                                             <dd class="primary">21,987,483</dd>
                                         </dl>
                                     </li>
                                     <li>
                                         <dl>
-                                            <dt>유출</dt>
-                                            <dd class="primary">21,987,483</dd>
+                                            <dt>총 유출</dt>
+                                            <dd class="green">21,987,483</dd>
                                         </dl>
                                     </li>
                                 </ul>
@@ -159,6 +159,45 @@
                         <div class="col-12 col-lg-6 order-1">
                             <div class="card">
                                 <img src="img/sample-01.png" alt="">
+                                <div class="dropdown pc">
+                                    <button class="dropdown-btn">Layer List</button>
+                                    <ul class="dropdown-content">
+                                        <li>
+                                            <div class="check-group">
+                                                <input type="checkbox" id="check01">
+                                                <label for="check01">유입인구</label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="check-group">
+                                                <input type="checkbox" id="check02">
+                                                <label for="check02">유출인구</label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="check-group">
+                                                <input type="checkbox" id="check03">
+                                                <label for="check03">체류시간</label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="check-group">
+                                                <input type="checkbox" id="check04">
+                                                <label for="check04">탄소배출량</label>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="legend pc">
+                                    <h6>유입인구수(명)</h6>
+                                    <ul>
+                                        <li><span class="color-1"></span>180 - 5,618</li>
+                                        <li><span class="color-2"></span>5,619 - 12,695</li>
+                                        <li><span class="color-3"></span>12,696 - 29,961</li>
+                                        <li><span class="color-4"></span>29,962 - 127,454</li>
+                                        <li><span class="color-5"></span>127,455 - 142,8514</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                         <div class="col-12 col-lg-6">
@@ -175,7 +214,7 @@
                                                 <li>1. 수원시</li>
                                                 <li>1. 수원시</li>
                                             </ul>
-                                            <div class="table">
+                                            <div class="table pc">
                                                 <table>
                                                     <tbody>
                                                         <tr>
@@ -207,7 +246,7 @@
                                                 <li>1. 수원시</li>
                                                 <li>1. 수원시</li>
                                             </ul>
-                                            <div class="table">
+                                            <div class="table pc">
                                                 <table>
                                                     <tbody>
                                                         <tr>
@@ -236,8 +275,8 @@
                             <div class="card">
                                 <div class="tabs">
                                     <ul class="tab-list">
-                                        <li class="tab-button active" data-target="tab-content-01">유입 및<br>유출 인구</li>
-                                        <li class="tab-button" data-target="tab-content-02">방문자<br>체류시간</li>
+                                        <li class="tab-button active" data-target="tab-content-01">유입 및<br class="mo"> 유출 인구</li>
+                                        <li class="tab-button" data-target="tab-content-02">방문자<br class="mo"> 체류시간</li>
                                         <li class="tab-button" data-target="tab-content-03">탄소배출량</li>
                                     </ul>
                                     <div class="tab-content" id="tab-content-01">

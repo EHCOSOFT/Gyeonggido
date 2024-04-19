@@ -93,4 +93,9 @@ $(document).ready(function () {
     $(document).click(function() {
         $('.depth-3').css('display', 'none');
     });
+
+    $('.dropdown-btn').click(function() {
+        $(this).toggleClass('active');
+        $('.dropdown-content').toggleClass('active');
+    });
 });
